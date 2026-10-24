@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600&display=swap');
+
+:root {
+  --paper: #fffdfc;
+  --ink: #20191c;
+  --ink-soft: #62575b;
+  --pink: #f5d2dd;
+  --pink-wash: #fbf2f5;
+  --pink-strong: #bb5677;
+  --pink-gradient: linear-gradient(135deg, #fbe4eb 0%, #f4c6d5 52%, #eaa6bc 100%);
+  --pink-gradient-soft: linear-gradient(125deg, #fff9fb 0%, #fbe8ee 48%, #f5d1dd 100%);
+  --line: #e9e1e2;
+  --display: 'Playfair Display', Georgia, serif;
+  --sans: 'DM Sans', 'Segoe UI', sans-serif;
+
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-size: 14px;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  color: var(--ink);
+  background: #f2c1d0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--pink-strong);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+}
